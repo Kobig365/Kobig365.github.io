@@ -10,7 +10,7 @@
 	<button id="caruselBtn" type="button"><h4>Carusel</h4></button>
 </div>
 <script id="page Logic" type="text/javascript">
-		document.getElementById("caruselBtn").addEventListener("click", function(){/*Send the following json to LE*/})
+		document.getElementById("caruselBtn").addEventListener("click", function(){injectMobileCarousel()})
 </script>
 <script id="mobile_Carousel" type="text/javascript">
 	function injectMobileCarousel() {
@@ -20,7 +20,7 @@
 		}
 			console.log("Injected successfully");
 		}; 
-		var command = lpTag.agentSDK.cmdNames.writeSC;
+		var cmdName = lpTag.agentSDK.cmdNames.writeSC;
 		var data = {
 					json: {
 						  "type": "carousel",
