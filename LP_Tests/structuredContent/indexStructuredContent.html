@@ -24,110 +24,118 @@
 		}; 
 		var cmdName = lpTag.agentSDK.cmdNames.writeSC;
 		var data = {
-					json: {
-	"type": "vertical",
-	"elements": [{
-		"type": "carousel",
-		"padding": 10,
-		"elements": [{
-				"type": "vertical",
-				"elements": [{
-						"type": "text",
-						"text": "Small plan 2 GB data ",
-						"tooltip": "Small plan",
-						"rtl": false,
-						"style": {
-							"bold": true,
-							"italic": false,
-							"color": "#000000"
-						}
-					},
-					{
-						"type": "text",
-						"text": "500$ national talk",
-						"tooltip": "500$",
-						"rtl": false,
-						"style": {
-							"bold": true,
-							"italic": false,
-							"color": "#000000"
-						}
-					},
-					{
-						"type": "text",
-						"text": "49$ per month",
-						"tooltip": "49$",
-						"rtl": false,
-						"style": {
-							"bold": true,
-							"italic": true,
-							"color": "#000000"
-						}
-					},
-					{
-						"type": "button",
-						"tooltip": "Choose a plan",
-						"title": "Choose a plan",
-						"click": {
-							"actions": [{
-								"type": "publishText",
-								"text": "Mobiles on a plan"
-							}]
-						}
-					}
-				]
-			},
-			{
-				"type": "vertical",
-				"elements": [{
-						"type": "text",
-						"text": "Medium plan 15GB data",
-						"tooltip": "Medium plan",
-						"style": {
-							"bold": true,
-							"italic": false,
-							"color": "#000000"
-						},
-						"rtl": false
-					},
-					{
-						"type": "text",
-						"text": "Unlimited national talk",
-						"tooltip": "Unlimited",
-						"style": {
-							"bold": true,
-							"italic": false,
-							"color": "#000000"
-						},
-						"rtl": false
-					},
-					{
-						"type": "text",
-						"text": "69$ per month",
-						"tooltip": "Unlimited",
-						"style": {
-							"bold": true,
-							"italic": false,
-							"color": "#000000"
-						},
-						"rtl": false
-					},
-					{
-						"type": "button",
-						"tooltip": "Buy now",
-						"title": "Buy now",
-						"click": {
-							"actions": [{
-								"type": "publishText",
-								"text": "Add to cart"
-							}]
-						},
-						"rtl": false
-					}
-				]
-			}
-		]
-	}]
+  "type": "vertical",
+  "elements": [
+    {
+      "type": "carousel",
+      "padding": 10,
+      "elements": [
+        {
+          "type": "vertical",
+          "elements": [
+            {
+              "type": "text",
+              "text": "Small plan 2 GB data ",
+              "tooltip": "Small plan",
+              "rtl": false,
+              "style": {
+                "bold": true,
+                "italic": false,
+                "color": "#000000"
+              }
+            },
+            {
+              "type": "text",
+              "text": "500$ national talk",
+              "tooltip": "500$",
+              "rtl": false,
+              "style": {
+                "bold": true,
+                "italic": false,
+                "color": "#000000"
+              }
+            },
+            {
+              "type": "text",
+              "text": "49$ per month",
+              "tooltip": "49$",
+              "rtl": false,
+              "style": {
+                "bold": true,
+                "italic": true,
+                "color": "#000000"
+              }
+            },
+            {
+              "type": "button",
+              "tooltip": "Choose a plan",
+              "title": "Choose a plan",
+              "click": {
+                "actions": [
+                  {
+                    "type": "publishText",
+                    "text": "Mobiles on a plan"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "vertical",
+          "elements": [
+            {
+              "type": "text",
+              "text": "Medium plan 15GB data",
+              "tooltip": "Medium plan",
+              "style": {
+                "bold": true,
+                "italic": false,
+                "color": "#000000"
+              },
+              "rtl": false
+            },
+            {
+              "type": "text",
+              "text": "Unlimited national talk",
+              "tooltip": "Unlimited",
+              "style": {
+                "bold": true,
+                "italic": false,
+                "color": "#000000"
+              },
+              "rtl": false
+            },
+            {
+              "type": "text",
+              "text": "69$ per month",
+              "tooltip": "Unlimited",
+              "style": {
+                "bold": true,
+                "italic": false,
+                "color": "#000000"
+              },
+              "rtl": false
+            },
+            {
+              "type": "button",
+              "tooltip": "Buy now",
+              "title": "Buy now",
+              "click": {
+                "actions": [
+                  {
+                    "type": "publishText",
+                    "text": "Add to cart"
+                  }
+                ]
+              },
+              "rtl": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
 };
 		lpTag.agentSDK.command(cmdName, data, notifyWhenDone);
 	}				
